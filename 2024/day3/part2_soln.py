@@ -7,7 +7,7 @@ do_pattern = r"do\(\s*\)"
 dont_pattern = r"don't\(\s*\)"
 
 with open(file_path, 'r') as file:
-        content = file.read()
+    content = file.read()
 
 tokens = re.split(r"(?=mul\(|do\(|don't\()", content)
 
